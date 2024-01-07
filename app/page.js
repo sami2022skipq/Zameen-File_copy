@@ -14,6 +14,7 @@ const page = () => {
       <div className="w-[1110px] mx-auto pt-10 pb-16 flex justify-between text-sm">
         <div className="w-[73%]">
           <ProductCard />
+          {/* <ProductCard />
           <ProductCard />
           <ProductCard />
           <ProductCard />
@@ -21,8 +22,7 @@ const page = () => {
           <ProductCard />
           <ProductCard />
           <ProductCard />
-          <ProductCard />
-          <ProductCard />
+          <ProductCard /> */}
         </div>
         <div className="w-1/4">
           <SideListingCard />

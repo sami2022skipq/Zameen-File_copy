@@ -17,16 +17,16 @@ const Footer = () => {
       title: "Lorem Ipsum is simply dummy text of the industry.",
       date: "June 22, 2023",
     },
-    {
-      img: news_image,
-      title: "Lorem Ipsum is simply dummy text of the industry.",
-      date: "June 22, 2023",
-    },
-    {
-      img: news_image,
-      title: "Lorem Ipsum is simply dummy text of the industry.",
-      date: "June 22, 2023",
-    },
+    // {
+    //   img: news_image,
+    //   title: "Lorem Ipsum is simply dummy text of the industry.",
+    //   date: "June 22, 2023",
+    // },
+    // {
+    //   img: news_image,
+    //   title: "Lorem Ipsum is simply dummy text of the industry.",
+    //   date: "June 22, 2023",
+    // },
   ];
   return (
     <div className="w-[1080px] mx-auto text-white py-8 text-sm">
