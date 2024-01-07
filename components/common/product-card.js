@@ -64,7 +64,7 @@ const ProductCard = () => {
           </div>
         </div>
       </div>
-      <div className="bg-high-light-gray flex items-center justify-between px-5 py-3">
+      <div className="bg-high-light-gray border-t-[1.8px] border-gray-300 flex items-center justify-between px-5 py-3">
         <div className="flex items-center gap-x-3">
           <div className="relative">
             <div className="bg-web-blue text-xs w-4 h-4 rounded-full flex items-center justify-center absolute -top-1 -right-1 z-10 text-white">
