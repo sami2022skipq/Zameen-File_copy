@@ -17,19 +17,19 @@ const Footer = () => {
       title: "Lorem Ipsum is simply dummy text of the industry.",
       date: "June 22, 2023",
     },
-    // {
-    //   img: news_image,
-    //   title: "Lorem Ipsum is simply dummy text of the industry.",
-    //   date: "June 22, 2023",
-    // },
-    // {
-    //   img: news_image,
-    //   title: "Lorem Ipsum is simply dummy text of the industry.",
-    //   date: "June 22, 2023",
-    // },
+    {
+      img: news_image,
+      title: "Lorem Ipsum is simply dummy text of the industry.",
+      date: "June 22, 2023",
+    },
+    {
+      img: news_image,
+      title: "Lorem Ipsum is simply dummy text of the industry.",
+      date: "June 22, 2023",
+    },
   ];
   return (
-    <div className="w-[1080px] mx-auto text-white py-8 text-sm">
+    <div className="w-full lg:w-[1080px] px-5 lg-px-0 mx-auto text-white py-8 text-sm">
       <div className="flex items-center gap-x-2">
         <Image
           src={logo}
@@ -40,8 +40,8 @@ const Footer = () => {
         />
         <p className="text-xs font-semibold">Zameem File</p>
       </div>
-      <div className="flex py-10">
-        <div className="w-[30%] space-y-4 pr-7">
+      <div className="flex py-10 flex-col lg:flex-row gap-5 lg:gap-0">
+        <div className="w-full lg:w-[30%] space-y-4 lg:pr-7">
           <h5 className="text-xl font-semibold pb-2">About</h5>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -53,7 +53,7 @@ const Footer = () => {
             industry.
           </p>
         </div>
-        <div className="w-[18%] space-y-4">
+        <div className="w-full lg:w-[18%] space-y-4">
           <h5 className="text-xl font-semibold pb-2">Services</h5>
           {services.map((item, idx) => (
             <p key={idx} className="cursor-pointer w-fit">
@@ -61,7 +61,7 @@ const Footer = () => {
             </p>
           ))}
         </div>
-        <div className="w-[30%] space-y-4 pr-7">
+        <div className="w-full lg:w-[30%] space-y-4 lg:pr-7">
           <h5 className="text-xl font-semibold pb-2">Top News</h5>
           <div className="space-y-8">
             {news.map((item, idx) => (
@@ -81,7 +81,7 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div className="w-[22%] space-y-4">
+        <div className="w-full lg:w-[22%] space-y-4">
           <h5 className="text-xl font-semibold pb-2">Contacts</h5>
           <div className="flex items-start gap-x-1">
             <i className="fa-solid fa-location-dot mr-1 pt-1"></i>

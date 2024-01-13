@@ -1,6 +1,6 @@
 const FilterSection = () => {
   return (
-    <div className="w-full py-6 border-b-[1.8px] border-gray-300 flex flex-col items-center gap-y-6 text-sm">
+    <div className="w-full py-6 pt-28 border-b-[1.8px] border-gray-300 flex flex-col items-center gap-y-7 text-sm">
       <div className="flex gap-x-5">
         <div className="w-52 border-gray-400 border-[1.8px] rounded-sm flex items-center gap-x-1 px-1">
           <i className="fa-solid fa-magnifying-glass text-gray-400"></i>
