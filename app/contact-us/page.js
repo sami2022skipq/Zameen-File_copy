@@ -78,8 +78,8 @@ function Page() {
             </div>
           </div>
         </div>
-        <div className="bg-[#EEEEEE] py-10 lg:py-24 px-5 lg:px-20">
-          <div className="w-full flex flex-col lg:flex-row gap-x-10">
+        <div className="bg-[#EEEEEE] py-10 lg:py-20 px-5 lg:px-48">
+          <div className="w-full flex flex-col items-center lg:flex-row gap-x-10">
             <div className="w-full lg:w-3/5 space-y-8">
               <div>
                 <p className="text-sm font-medium">CONTACT</p>
@@ -145,7 +145,7 @@ function Page() {
                 </button>
               </form>
             </div>
-            <div className="hidden lg:block w-2/5 grow bg-black">
+            <div className="hidden lg:block w-2/5 h-2/5 rounded overflow-hidden">
               <Image
                 src={img2}
                 className="h-full w-full object-cover object-center"

@@ -49,8 +49,8 @@ function Page() {
           <div className="w-full sm:w-1/2 p-6">
             <div className="space-y-4">
               <h1 className="text-xl font-semibold">Sign Up</h1>
-              <div className="text-xs font-medium flex items-center justify-between sm:px-16 px-10">
-                <div className="border-gray-400 border-[1px] w-[100px] py-2 rounded text-center cursor-pointer flex items-center gap-x-1 justify-center shadow-sm">
+              <div className="text-xs font-medium flex items-center justify-evenly">
+                <div className="border-gray-400 border-[1px] w-[130px] py-2 rounded text-center cursor-pointer flex items-center gap-x-1 justify-center shadow-sm">
                   <Image
                     src={facebook}
                     alt="facebook"
@@ -60,7 +60,7 @@ function Page() {
                   />
                   <p>Facebook</p>
                 </div>
-                <div className="border-gray-400 border-[1px] w-[100px] py-2 rounded text-center cursor-pointer flex items-center gap-x-1 justify-center shadow-sm">
+                <div className="border-gray-400 border-[1px] w-[130px] py-2 rounded text-center cursor-pointer flex items-center gap-x-1 justify-center shadow-sm">
                   <Image
                     src={google}
                     alt="facebook"
@@ -78,7 +78,7 @@ function Page() {
               </div>
               <form className="space-y-6">
                 <div className="space-y-1">
-                  <label>User Name</label>
+                  <label>Full Name</label>
                   <div className="input-container">
                     <i className="fa-regular fa-user text-xl"></i>
                     <input
@@ -95,7 +95,7 @@ function Page() {
                     <input
                       type="text"
                       className="input-field"
-                      placeholder="123 4567 8907"
+                      placeholder="+9231234567890"
                     />
                   </div>
                 </div>

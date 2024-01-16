@@ -5,8 +5,8 @@ import verify from "@/assets/images/verify.png";
 const ProductCard = () => {
   return (
     <div className="w-full shadow-md overflow-hidden border-[1.8px] border-gray-300 rounded-md mb-8">
-      <div className="flex">
-        <div className="w-[40%]">
+      <div className="flex flex-col lg:flex-row">
+        <div className="w-full lg:w-[40%] relative">
           <Image
             src={logo}
             width={"100%"}
@@ -14,8 +14,14 @@ const ProductCard = () => {
             className="object-cover"
             alt="header_logo"
           />
+          <button
+            type="button"
+            className="absolute z-10 top-2 right-2 text-white bg-main-color h-8 w-8 items-center justify-center rounded-full text-xl flex lg:hidden"
+          >
+            <i className="fa-regular fa-heart"></i>
+          </button>
         </div>
-        <div className="w-[60%] p-5 flex flex-col justify-between">
+        <div className="w-full lg:w-[60%] p-3 lg:p-5 flex flex-col justify-between">
           <div>
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-x-8">
@@ -33,7 +39,7 @@ const ProductCard = () => {
                   Posted by Agent
                 </p>
               </div>
-              <i className="fa-solid fa-ellipsis-vertical text-xl pr-3 cursor-pointer"></i>
+              <i className="fa-solid fa-ellipsis-vertical text-xl pr-0 lg:pr-3 cursor-pointer"></i>
             </div>
           </div>
           <div>
@@ -50,17 +56,22 @@ const ProductCard = () => {
             <p className="text-sm font-semibold">
               10 Marla Residential Plot File. Available for Sell
             </p>
-            <p className="text-xs text-gray-400">
+            <p className="text-xs text-gray-400 hidden lg:block">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the standard dummy text.
             </p>
           </div>
-          <div className="text-xs text-gray-400 flex items-center gap-x-1">
-            <div className="space-x-1">
-              <i className="fa-solid fa-arrows-up-down"></i>
-              <i className="fa-solid fa-ruler-vertical transform rotate-180"></i>
+          <div className="text-xs text-gray-400 flex items-center justify-between pt-2 lg:pt-0">
+            <div className="flex gap-x-1">
+              <div className="space-x-1">
+                <i className="fa-solid fa-arrows-up-down"></i>
+                <i className="fa-solid fa-ruler-vertical transform rotate-180"></i>
+              </div>
+              <p className="font-medium">10 Marla</p>
             </div>
-            <p className="font-medium">10 Marla</p>
+            <p className="text-xs text-gray-400 block lg:hidden">
+              Listed 6 days ago
+            </p>
           </div>
         </div>
       </div>
@@ -74,7 +85,9 @@ const ProductCard = () => {
               <i className="fa-solid fa-user text-main-color text-3xl"></i>
             </div>
           </div>
-          <p className="text-xs text-gray-400">Listed 6 days ago</p>
+          <p className="text-xs text-gray-400 hidden lg:block">
+            Listed 6 days ago
+          </p>
         </div>
         <div className="flex items-center gap-x-4">
           <button
@@ -91,7 +104,7 @@ const ProductCard = () => {
           </button>
           <button
             type="button"
-            className="border-[1px] border-main-color transition-all hover:shadow-md text-main-color h-9 px-2 flex items-center justify-center rounded-md text-xl"
+            className="border-[1px] border-main-color transition-all hover:shadow-md text-main-color h-9 px-2 items-center justify-center rounded-md text-xl hidden lg:flex"
           >
             <i className="fa-regular fa-heart"></i>
           </button>

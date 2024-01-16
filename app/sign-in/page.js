@@ -48,8 +48,8 @@ function Page() {
             <div className="space-y-16">
               <h1 className="text-xl font-semibold">Sign In</h1>
               <div className="space-y-4">
-                <div className="text-xs font-medium flex items-center justify-between sm:px-16 px-10">
-                  <div className="border-gray-400 border-[1px] w-[100px] py-2 rounded text-center cursor-pointer flex items-center gap-x-1 justify-center shadow-sm">
+                <div className="text-xs font-medium flex items-center justify-evenly">
+                  <div className="border-gray-400 border-[1px] w-[130px] py-2 rounded text-center cursor-pointer flex items-center gap-x-1 justify-center shadow-sm">
                     <Image
                       src={facebook}
                       alt="facebook"
@@ -59,7 +59,7 @@ function Page() {
                     />
                     <p>Facebook</p>
                   </div>
-                  <div className="border-gray-400 border-[1px] w-[100px] py-2 rounded text-center cursor-pointer flex items-center gap-x-1 justify-center shadow-sm">
+                  <div className="border-gray-400 border-[1px] w-[130px] py-2 rounded text-center cursor-pointer flex items-center gap-x-1 justify-center shadow-sm">
                     <Image
                       src={google}
                       alt="facebook"
@@ -78,7 +78,7 @@ function Page() {
               </div>
               <form className="space-y-6">
                 <div className="space-y-1">
-                  <label>User Name</label>
+                  <label>Full Name</label>
                   <div className="input-container">
                     <i className="fa-regular fa-user text-xl"></i>
                     <input
@@ -110,17 +110,19 @@ function Page() {
                     Sign In
                   </button>
                 </div>
-                <div className="text-sm text-center space-y-1">
+                <div className="text-sm text-center space-y-2.5">
                   <p>
                     Have not any account?{" "}
                     <Link
                       href="/sign-up"
                       className="text-main-color font-semibold"
                     >
-                      Register Now
+                      Create Now
                     </Link>
                   </p>
-                  <Link href="/reset-password">Forget Password?</Link>
+                  <Link href="/reset-password">
+                    <p className="font-semibold">Forget Password?</p>
+                  </Link>
                 </div>
               </form>
             </div>

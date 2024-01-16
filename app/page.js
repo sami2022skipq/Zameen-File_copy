@@ -11,8 +11,8 @@ const page = () => {
     <>
       <Header />
       <FilterSection />
-      <div className="w-[1110px] mx-auto pt-10 pb-16 flex justify-between text-sm">
-        <div className="w-[73%]">
+      <div className="w-full lg:w-[1110px] mx-auto pt-6 lg:pt-10 pb-10 lg:pb-16 flex justify-between text-sm">
+        <div className="w-full lg:w-[73%] px-3 lg:px-0">
           <ProductCard />
           {/* <ProductCard />
           <ProductCard />
@@ -24,7 +24,7 @@ const page = () => {
           <ProductCard />
           <ProductCard /> */}
         </div>
-        <div className="w-1/4">
+        <div className="w-1/4 hidden lg:block">
           <SideListingCard />
         </div>
       </div>
