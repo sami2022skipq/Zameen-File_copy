@@ -62,7 +62,7 @@ function Page() {
         }
       );
       if (res.status === 201) {
-        dispatch(ZameenFileActions.setUser(res.data.user));
+        // dispatch(ZameenFileActions.setUser(res.data.user));
         push("/contact-info");
       }
     } catch (error) {
