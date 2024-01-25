@@ -13,6 +13,8 @@ RUN npm install
 # Copy the rest of the application code to the working directory
 COPY . .
 
+RUN npm i sharp
+
 # Build the Next.js app
 RUN npm run build
 
