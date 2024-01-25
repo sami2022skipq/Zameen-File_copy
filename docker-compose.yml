@@ -1,0 +1,40 @@
+version: '3'
+
+services:
+  frontend:
+    build:
+      context: ./Frontend
+    ports:
+      - "3000:3000"
+    networks:
+      - app-network
+    labels:
+    - "traefik.http.routers.frontend.rule=Host(`localhost`) && Path(`/`)"
+
+  backend:
+    build:
+      context: ./Backend
+    ports:
+      - "5000:5000"
+    networks:
+      - app-network
+    environment:
+      - FRONTEND_URL=http://frontend:3000
+
+  nginx:
+    build:
+      context: ./nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - frontend
+      - backend
+    volumes:
+      - ./certbot/conf:/etc/letsencrypt
+      - ./certbot/www:/var/www/certbot
+    networks:
+      - app-network
+networks:
+  app-network:
+    driver: bridge
