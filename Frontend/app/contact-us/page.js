@@ -27,7 +27,7 @@ function Page() {
             </div>
           </div>
         </div>
-        <div className="py-10 lg:py-16 space-y-20">
+        <div className="py-10 lg:w-[1200px] mx-auto lg:py-16 space-y-20">
           <div className="space-y-3 text-center">
             <p className="text-sm">Contact us</p>
             <p className="text-5xl font-semibold">Get in Touch</p>
@@ -36,7 +36,7 @@ function Page() {
             <div className="px-3 text-right lg:hidden">
               <i className="fa-solid fa-arrow-right-long"></i>
             </div>
-            <div className="w-full p-5 lg:px-16 flex items-center justify-between gap-x-5 overflow-x-auto">
+            <div className="w-full p-5 lg:px-0 flex items-center justify-between gap-x-5 overflow-x-auto">
               <div className="contact-page-card">
                 <Image
                   src={email}
@@ -77,7 +77,7 @@ function Page() {
           </div>
         </div>
         <div className="bg-[#EEEEEE] py-10 lg:py-20 px-5 lg:px-48">
-          <div className="w-full flex flex-col items-center lg:flex-row gap-x-10">
+          <div className="w-full lg:w-[1080px] mx-auto flex flex-col items-center lg:flex-row gap-x-10">
             <div className="w-full lg:w-3/5 space-y-8">
               <div>
                 <p className="text-sm font-medium">CONTACT</p>

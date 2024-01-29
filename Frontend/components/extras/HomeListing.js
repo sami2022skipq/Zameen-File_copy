@@ -2,8 +2,8 @@ import HomeCard from "@/components/extras/HomeCard";
 
 function HomeListing() {
   return (
-    <div className="bg-[#EEE] py-10 lg:py-20 px-4 lg:px-36">
-      <div className="w-full flex flex-col items-center justify-center gap-y-12">
+    <div className="bg-[#EEE] py-10 lg:py-20 px-4 lg:px-0">
+      <div className="w-full lg:w-[1080px] mx-auto flex flex-col items-center justify-center gap-y-12">
         <div className="lg:w-[50rem] text-center space-y-2">
           <p className="text-main-color font-medium">FEATURED</p>
           <p className="text-4xl font-semibold">Latest Properties</p>
@@ -14,7 +14,7 @@ function HomeListing() {
             believable.
           </p>
         </div>
-        <div className="w-full flex items-center flex-wrap gap-5 lg:gap-y-16 lg:gap-x-10">
+        <div className="w-full flex items-center justify-between flex-wrap gap-5">
           <HomeCard />
           <HomeCard />
           <HomeCard />

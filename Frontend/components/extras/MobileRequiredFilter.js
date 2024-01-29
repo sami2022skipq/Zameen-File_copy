@@ -2,7 +2,7 @@ function MobileRequiredFilter({ openModel, closeModel }) {
     return (
       <div
         className={`w-full h-screen fixed top-0 right-0 z-50 flex items-center justify-center bg-[#33333363] py-20 px-5 transition-all transform ${
-          openModel ? "scale-100" : "scale-0"
+          openModel ? "scale-100 h-screen" : "scale-0 h-0"
         }`}
       >
         <div className="w-full bg-white rounded-md p-3 relative">

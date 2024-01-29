@@ -2,7 +2,7 @@ import ContactForm from "./contact-form";
 
 const ContactContainer = () => {
   return (
-    <div className="w-full lg:w-[980px] mx-auto flex flex-col lg:flex-row mb-10 lg:mb-16 px-3 gap-y-2 lg:gap-y-0">
+    <div className="w-full lg:w-[1080px] mx-auto flex flex-col lg:flex-row mb-10 lg:mb-16 px-3 gap-y-2 lg:gap-y-0">
       <div className="lg:pt-20 lg:pr-20 w-full lg:w-[55%] space-y-2 lg:space-y-4">
         <p className="text-main-color font-sm">GET IN TOUCH</p>
         <h1 className="text-5xl font-semibold">Contact us</h1>
