@@ -49,99 +49,39 @@ function RequiredHeroSection() {
             <div className="lg:flex space-y-3 lg:space-y-0 gap-3 px-4 lg:px-0">
               <div className="bg-white px-6 py-4 rounded space-y-3">
                 <div className="flex flex-col lg:flex-row items-center justify-between gap-x-8">
-                  <div className="space-y-3 w-full">
+                  <div className="flex flex-col gap-y-3">
                     <label className="text-sm font-medium">
                       Search by City
                     </label>
-                    <div className="relative">
-                      <div
-                        className="w-60 flex-none border-gray-400 text-gray-400 text-sm p-2.5 rounded border-[1.8px] flex items-center justify-between cursor-pointer"
-                        onClick={() => setCityDropDown(!cityDropDown)}
-                      >
-                        <p>{selectedCity}</p>
-                        <i
-                          className={`fa-solid fa-chevron-down transition-all transform ${
-                            cityDropDown ? "rotate-180" : "rotate-0"
-                          }`}
-                        ></i>
-                      </div>
-                      {cityDropDown && (
-                        <DropDown
-                          array={city}
-                          setValue={setSelectedCity}
-                          value={selectedCity}
-                          closeDropDown={setCityDropDown}
-                        />
-                      )}
-                    </div>
+                    <input className="search-input" />
                   </div>
-                  <div className="space-y-3 w-full">
+                  <div className="flex flex-col gap-y-3">
                     <label className="text-sm font-medium">Location</label>
-                    <div className="relative">
-                      <div
-                        className="w-60 flex-none border-gray-400 text-gray-400 text-sm p-2.5 rounded border-[1.8px] flex items-center justify-between cursor-pointer"
-                        onClick={() => setLocationDropDown(!locationDropDown)}
-                      >
-                        <p>{selectedLocation}</p>
-                        <i
-                          className={`fa-solid fa-chevron-down transition-all transform ${
-                            locationDropDown ? "rotate-180" : "rotate-0"
-                          }`}
-                        ></i>
-                      </div>
-                      {locationDropDown && (
-                        <DropDown
-                          array={location}
-                          setValue={setSelectedLocation}
-                          value={selectedLocation}
-                          closeDropDown={setLocationDropDown}
-                        />
-                      )}
-                    </div>
+                    <input className="search-input" />
                   </div>
-                  <div className="space-y-3 w-full">
+                  <div className="flex flex-col gap-y-3">
                     <label className="text-sm font-medium">File Type</label>
-                    <div className="relative">
-                      <div
-                        className="w-60 flex-none border-gray-400 text-gray-400 text-sm p-2.5 rounded border-[1.8px] flex items-center justify-between cursor-pointer"
-                        onClick={() => setFileDropDown(!fileDropDown)}
-                      >
-                        <p>{selectedFile}</p>
-                        <i
-                          className={`fa-solid fa-chevron-down transition-all transform ${
-                            fileDropDown ? "rotate-180" : "rotate-0"
-                          }`}
-                        ></i>
-                      </div>
-                      {fileDropDown && (
-                        <DropDown
-                          array={file}
-                          setValue={setSelectedFile}
-                          value={selectedFile}
-                          closeDropDown={setFileDropDown}
-                        />
-                      )}
-                    </div>
+                    <input className="search-input" />
                   </div>
                 </div>
                 <div className="text-xs flex items-center gap-x-5 text-main-color">
-                <div
-                  onClick={() => setShowRequiredFilter(!showRequiredFilter)}
-                  className="text-xs flex items-center gap-x-2 text-main-color cursor-pointer w-fit"
-                >
-                  <div className="hidden lg:block">
-                    <i
-                      className={`fa-solid fa-chevron-down cursor-pointer transition-all transform ${
-                        showRequiredFilter ? "rotate-180" : "rotate-0"
-                      }`}
-                    ></i>
+                  <div
+                    onClick={() => setShowRequiredFilter(!showRequiredFilter)}
+                    className="text-xs flex items-center gap-x-2 text-main-color cursor-pointer w-fit"
+                  >
+                    <div className="hidden lg:block">
+                      <i
+                        className={`fa-solid fa-chevron-down cursor-pointer transition-all transform ${
+                          showRequiredFilter ? "rotate-180" : "rotate-0"
+                        }`}
+                      ></i>
+                    </div>
+                    <p>More Option</p>
                   </div>
-                  <p>More Option</p>
-                </div>
-                <p className="cursor-pointer">Reset Search</p>
+                  <p className="cursor-pointer">Reset Search</p>
                 </div>
               </div>
-              <div className="flex bg-main-color text-white items-center justify-center rounded gap-x-2 p-3 text-xl cursor-pointer">
+              <div className="flex bg-main-color text-white items-center justify-center rounded gap-x-2 px-5 text-xl cursor-pointer">
                 <i className="fa-solid fa-magnifying-glass"></i>
                 <p>Search</p>
               </div>

@@ -28,6 +28,9 @@
     .drop-down-items {
         @apply hover:bg-gray-400 hover:text-white p-1 rounded cursor-pointer text-gray-400
     }
+    .search-input {
+        @apply w-60 placeholder-gray-400 outline-none border-[1px] p-2 rounded-md border-gray-400 text-black
+    }
 }
 
 .carousel .carousel-slider {

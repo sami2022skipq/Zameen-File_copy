@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function HomeCard() {
   return (
-    <div className="lg:w-[30%] 2xl:w-[23.75rem] rounded bg-white shadow">
+    <div className="lg:w-[30%] rounded bg-white shadow">
       <div className="w-full h-1/2">
         <Image
           src={imgcard}

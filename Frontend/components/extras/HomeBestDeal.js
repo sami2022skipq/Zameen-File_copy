@@ -48,7 +48,7 @@ function HomeBestDeal() {
     }
   }, [counter]);
   return (
-    <div className="py-10 lg:py-40 px-4 lg:px-36 space-y-14 lg:space-y-28">
+    <div className="lg:w-[1080px] mx-auto py-10 lg:py-40 px-4 lg:px-0 space-y-14 lg:space-y-28">
       <div className="space-y-10 lg:space-y-20">
         <div className="w-full space-y-2">
           <p className="text-main-color text-sm">HOT PROPERTY</p>

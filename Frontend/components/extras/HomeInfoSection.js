@@ -3,7 +3,7 @@ import img2 from "@/assets/images/home-section-2-img.png";
 
 function HomeInfoSection() {
   return (
-    <div className="xl:py-40 xl:px-36">
+    <div className="xl:py-40 lg:w-[1080px] mx-auto">
       <div className="w-full lg:h-[33rem] flex flex-col lg:flex-row">
         <div className="w-1/2 grow hidden lg:block">
           <Image

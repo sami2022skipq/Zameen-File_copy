@@ -34,11 +34,15 @@ app.set('trust proxy', 1);
 // );
 //app.use(helmet());
 
+
+//For Production
 app.use(cors({
   origin: `${process.env.FRONTEND_URL}`,
   credentials: true,
 }));
 
+
+// for Development
 // app.use(cors({
 //   origin: `http://localhost:3000`,
 //   credentials: true,
