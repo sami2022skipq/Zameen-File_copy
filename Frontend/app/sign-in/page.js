@@ -230,7 +230,7 @@ function Page() {
                       href="/sign-up"
                       className="text-main-color font-semibold"
                     >
-                      Create Now
+                      Create An Account
                     </Link>
                   </p>
                   <Link href="/reset-password">
